@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard.edu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png" style="width: 110px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index1.html">ABOUT</a></li>
+                    <li><a href="index2.html">COURSE</a></li>
+                    <li><a href="index3.html">BLOG</a></li>
+                    <li><a href="index4.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>        
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- ----------------Contact Us-------------- -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.5024981452284!2d-71.12082372441314!3d42.3744407341937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20University!5e0!3m2!1sen!2sin!4v1721731912212!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>                    <span>
+                        <h5>Massachusetts Hall, Cambridge, MA 02138, United States</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>                    <span>
+                        <h5> 617-495-1000</h5>
+                        <p>Monday to Sunday,10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>                        
+                    <h5>Harvard6145@gmail.com</h5>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="filehandle.php"  method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Adress" required>
+                    <input type="text" name=" subject"placeholder="Enter Your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                </form>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </div>
+        </div>
+    </section>
+    <!-- ------------footer----------------- -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>"Harvard University: A premier institution where excellence, innovation, and leadership come together to shape future leaders and pioneers."</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>            
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Adit Katiyar</p>
+    </section>
+    <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+        </script>
+    </body>        
+    </html>

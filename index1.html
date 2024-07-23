@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard.edu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png" style="width: 110px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index1.html">ABOUT</a></li>
+                    <li><a href="index2.html">COURSE</a></li>
+                    <li><a href="index3.html">BLOG</a></li>
+                    <li><a href=" ">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>        
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- ---------------About us------------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>One of the Finest Universities </h1>
+                <p>
+                    Harvard University, founded in 1636, is the oldest U.S. institution of higher education. Located in Cambridge, MA, it excels in research, academic programs, and fostering global leaders. With a diverse community, Harvard is dedicated to innovation, inclusion, and sustainability, shaping the future through knowledge and discovery.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+        </div>
+    </section>
+    
+    <!-- ------------footer----------------- -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>"Harvard University: A premier institution where excellence, innovation, and leadership come together to shape future leaders and pioneers."</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>            
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Adit Katiyar</p>
+    </section>
+    <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+        </script>
+    </body>        
+    </html>
